@@ -1,0 +1,8 @@
+{
+  "customer_id": "123",
+  "name": "John Doe",
+  "email": "john.doe@email.com",
+  "address": "NY",
+  "op_type": "U",
+  "event_time": "2024-02-01T10:00:00"
+}

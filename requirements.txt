@@ -1,0 +1,17 @@
+# CDC SCD Type 2 Pipeline – Databricks
+
+Production-grade CDC pipeline implementing SCD Type 2 using
+Databricks Auto Loader, Structured Streaming, and Delta Lake.
+
+## Architecture
+JSON CDC → Bronze (Auto Loader) → Silver (SCD Type 2)
+
+## Key Features
+- Hash-based change detection
+- Full historical tracking
+- Idempotent streaming with checkpoints
+- Parameterized via single config file
+- Designed for Databricks Jobs and Control-M orchestration
+
+## Execution
+Run as a Databricks Job or notebook entry point.

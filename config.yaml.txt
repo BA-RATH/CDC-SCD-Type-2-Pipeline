@@ -1,0 +1,17 @@
+env: dev
+
+source_path: "dbfs:/FileStore/barath/landing/cdc_json_landing"
+bronze_table_path: "dbfs:/FileStore/barath/tables/cdc_cust_bronze"
+silver_table_path: "dbfs:/FileStore/barath/tables/cdc_cust_silver"
+
+bronze_checkpoint: "dbfs:/FileStore/barath/checkpoints/bronze"
+silver_checkpoint: "dbfs:/FileStore/barath/checkpoints/silver"
+
+schema_location: "dbfs:/FileStore/barath/schema"
+
+trigger_interval: "30 seconds"
+
+hash_columns:
+  - name
+  - email
+  - address
